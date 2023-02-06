@@ -1,4 +1,45 @@
-import styled from "styled-components";
+import styled, { createGlobalStyle } from "styled-components";
+
+export const GlobalStyle = createGlobalStyle`
+  body{
+    background: ${({ theme }) => theme.surface1};
+    color: ${({ theme }) => theme.text1};
+    font-size: clamp(1rem, 8vw, 1.3rem);
+    > * {
+      transition: 0.25s ease all;
+    }
+  }
+  h1{
+    font-size: clamp(1.2rem, 8vw, 2.8rem);
+  }
+`;
+
+export const MainApp = styled.main`
+  h2.question-text {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1.2rem, 6vw, 3rem);
+  }
+  }
+  @media screen and (min-width: 980px) {
+    place-items: center;
+  }
+`;
+
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-between;
+  /* padding: ${({ theme }) => theme.padding}; */
+  :last-child {
+    margin-bottom: 4rem;
+  }
+  @media screen and (min-width: 980px) {
+    min-block-size: 50rem;
+    inline-size: 50rem;
+  }
+`;
 
 export const BasicGrid = styled.div`
   display: grid;
@@ -20,7 +61,7 @@ export const Button = styled.button`
   width: 100%;
   /* disabled styles */
   cursor: ${({ disabled }) => (disabled ? "not-allowed" : "pointer")};
-  background: ${({ disabled }) => (disabled ? "#ffffff26" : "")};
+  background: ${({ disabled, theme }) => (disabled ? theme.disabled : "")};
   &.ans {
     background: ${({ theme }) => theme.success};
     color: ${({ theme }) => theme.textDark1};
@@ -28,7 +69,7 @@ export const Button = styled.button`
   &.secondary {
     background: ${({ theme }) => theme.secondary};
     color: ${({ theme }) => theme.textDark1};
-    background: ${({ disabled }) => (disabled ? "#ffffff26" : "")};
+    background: ${({ disabled, theme }) => (disabled ? theme.disabled : "")};
   }
   @media screen and (min-width: 1080px) {
     :hover {
@@ -41,32 +82,5 @@ export const Button = styled.button`
   }
   &.selected {
     background: orangered;
-  }
-`;
-
-export const Box = styled.div`
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  justify-content: space-between;
-  /* padding: ${({ theme }) => theme.padding}; */
-  :last-child {
-    margin-bottom: 4rem;
-  }
-  @media screen and (min-width: 980px) {
-    min-block-size: 50rem;
-    inline-size: 50rem;
-  }
-`;
-
-export const MainApp = styled.main`
-  h2.question-text {
-    display: flex;
-    justify-content: center;
-    font-size: clamp(1.2rem, 6vw, 3rem);
-  }
-  }
-  @media screen and (min-width: 980px) {
-    place-items: center;
   }
 `;
