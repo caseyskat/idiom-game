@@ -17,3 +17,7 @@
     padding: 0 1rem;
   }
 }
+img{
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 4px 6px 35px 18px rgba(216,246,255,0.33);}
