@@ -37,7 +37,7 @@ export const Box = styled.div`
   }
   @media screen and (min-width: 980px) {
     min-block-size: 50rem;
-    inline-size: 50rem;
+    inline-size: 40rem;
   }
 `;
 

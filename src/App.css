@@ -4,9 +4,11 @@
   min-block-size: 100vh;
   overflow-x: hidden;
 }
+
 .app > * {
   grid-column: 2;
 }
+
 .full-bleed {
   width: 100%;
   grid-column: 1 / 4;
@@ -17,6 +19,7 @@
     padding: 0 1rem;
   }
 }
+
 img {
   height: 350px;
   border-radius: 15px;
