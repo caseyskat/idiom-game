@@ -2,33 +2,33 @@ const questions = [
   {
     question: <img src="assets/1.jpg" alt=" " />,
     answers: [
-      { answerText: "Smile", isCorrect: false },
+      { answerText: "smile", isCorrect: false },
       { answerText: "bullet in the mouth", isCorrect: false },
-      { answerText: "Bite the bullet", isCorrect: true },
+      { answerText: "bite the bullet", isCorrect: true },
     ],
   },
   {
     question: <img src="assets/2.jpg" alt=" " />,
     answers: [
-      { answerText: "Make a call", isCorrect: false },
-      { answerText: "Call it a day", isCorrect: true },
-      { answerText: "Say hello", isCorrect: false },
+      { answerText: "make a call", isCorrect: false },
+      { answerText: "call it a day", isCorrect: true },
+      { answerText: "say hello", isCorrect: false },
     ],
   },
   {
     question: <img src="assets/3.jpg" alt=" " />,
     answers: [
-      { answerText: "Bare winter", isCorrect: false },
-      { answerText: "Have a cold feet", isCorrect: true },
-      { answerText: "Have ice feet", isCorrect: false },
+      { answerText: "bare winter", isCorrect: false },
+      { answerText: "have a cold feet", isCorrect: true },
+      { answerText: "have ice feet", isCorrect: false },
     ],
   },
   {
     question: <img src="assets/4.jpg" alt=" " />,
     answers: [
-      { answerText: "Cut the corners", isCorrect: true },
-      { answerText: "Cut the sticker", isCorrect: false },
-      { answerText: "Paper cut", isCorrect: false },
+      { answerText: "cut the corners", isCorrect: true },
+      { answerText: "cut the sticker", isCorrect: false },
+      { answerText: "paper cut", isCorrect: false },
     ],
   },
   {
@@ -44,7 +44,7 @@ const questions = [
     answers: [
       { answerText: "room in the elephant", isCorrect: false },
       { answerText: "thinking man", isCorrect: false },
-      { answerText: "Elephant in the room", isCorrect: true },
+      { answerText: "elephant in the room", isCorrect: true },
     ],
   },
   {

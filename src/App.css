@@ -1,23 +1,25 @@
-.app{
+.app {
   display: grid;
   grid-template-columns: 1fr min(99ch, 100%) 1fr;
   min-block-size: 100vh;
   overflow-x: hidden;
 }
-.app > *{
+.app > * {
   grid-column: 2;
 }
 .full-bleed {
-  width:100%;
+  width: 100%;
   grid-column: 1 / 4;
 }
 
-@media screen and (max-width: 980px){
-  .app{
+@media screen and (max-width: 980px) {
+  .app {
     padding: 0 1rem;
   }
 }
-img{
+img {
   height: 350px;
   border-radius: 15px;
-  box-shadow: inset -1px 3px 8px 5px #1F87FF, 2px 5px 16px 0px #0B325E, 4px 6px 35px 18px rgba(216,246,255,0.33);}
+  box-shadow: inset -1px 3px 8px 5px #1f87ff, 2px 5px 16px 0px #0b325e,
+    4px 6px 35px 18px rgba(216, 246, 255, 0.33);
+}
