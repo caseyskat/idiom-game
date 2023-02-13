@@ -11,7 +11,6 @@ const QuestionCard = () => {
   const [avg, setAvg] = useState(0);
   const [showAns, setShowAns] = useState(false);
 
-  //function to calc score and show correct answer
   const handleAnswerClick = (isCorrect, e) => {
     setShowAns(true);
     if (isCorrect) {
@@ -22,8 +21,6 @@ const QuestionCard = () => {
     }, 1800);
   };
 
-  //function to go to next question if within bounds of quiz length and hide correct answer
-  // if ouside the bounds of the quiz array, the quiz will end
   const nextQuestion = () => {
     setShowAns(false);
     if (currentIndex === randQuestions.length - 1) {
@@ -33,7 +30,6 @@ const QuestionCard = () => {
     }
   };
 
-  //function to pre-emptively end quiz
   const seeResults = () => {
     setEndQuiz(true);
     setAvg((score / currentIndex) * 100);
@@ -45,7 +41,6 @@ const QuestionCard = () => {
     setAvg((score / currentIndex) * 100);
   };
 
-  //function to result all variables
   const reset = () => {
     setEndQuiz(false);
     setCurrentIndex(0);
