@@ -11,7 +11,7 @@ function App() {
       <MainApp className="app">
         <QuestionCard />
         <p style={{ fontSize: ".7rem", textAlign: "center" }}>
-          made with ❤️ by Caseys_kat © {new Date().getFullYear()}
+          made with ❤️ by Caseys_kat {new Date().getFullYear()}
         </p>
       </MainApp>
     </ThemeProvider>
